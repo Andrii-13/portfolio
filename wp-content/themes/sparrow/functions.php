@@ -12,6 +12,10 @@ function register_my_widgets()
         'name'          => "Right Sidebar",
         'id'            => "right_sidebar",
         'description'   => 'опис сайдбару',
+        //змінюємо на li на div щоб не було крапок.     
+        // 'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'before_widget' => '<div class="widget %2$s">',
+        'after_widget'  => "</div>\n",
 
     ));
 }
@@ -21,7 +25,6 @@ function theme_register_nav_menu()
     register_nav_menu('header-menu', 'Header Menu'); //1 параметр - імя яке задаємо для виведення в wp_nav_menu, 2 - параментр - для відображеня меню Водрпресс;
     register_nav_menu('footer-menu', 'Footer Menu');
 }
-
 
 function style_theme() // підключаємо стилі
 {

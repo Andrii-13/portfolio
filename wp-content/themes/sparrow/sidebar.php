@@ -1,5 +1,7 @@
 <aside id="sidebar">
 
+    <?php dynamic_sidebar('right_sidebar') ?>
+
     <div class="widget widget_search">
         <h5>Search</h5>
         <form action="#">
